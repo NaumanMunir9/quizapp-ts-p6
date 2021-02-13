@@ -45,7 +45,7 @@ const App = () => {
         <h3>Result</h3>
 
         <div>
-          <p>{`Your final score is: ${score} out of ${TOTAL_QUESTIONS}`}</p>
+          <p>{`Your final score is ${score} out of ${TOTAL_QUESTIONS}`}</p>
         </div>
       </div>
     );
