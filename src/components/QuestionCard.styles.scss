@@ -1,0 +1,41 @@
+.question-card {
+  max-width: 40rem;
+  height: 100%;
+  padding: 1.25rem 2.5rem;
+  margin: 2.5rem auto;
+  box-shadow: 0 0.0625rem 0.625rem gray;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 0.625rem;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .mapped-options {
+    font-size: 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    background-color: #000c1d;
+    border: 0.0625rem solid gray;
+    color: whitesmoke;
+    padding: 0.625rem 1.25rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

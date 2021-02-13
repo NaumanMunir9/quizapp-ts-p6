@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { QuestionCardProps } from "../quizTypes";
+import "./QuestionCard.styles.scss";
 
 const QuestionCard: React.FC<QuestionCardProps> = ({
   option,
@@ -22,25 +23,27 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
             callback(event, selectedAnswer)
           }
         >
-          {option.map((item, index) => {
-            return (
-              <div key={index}>
-                <label>
-                  <input
-                    type="radio"
-                    value={item}
-                    name="option"
-                    required
-                    checked={selectedAnswer === item}
-                    onChange={handleSelection}
-                  />
-                  {item}
-                </label>
-              </div>
-            );
-          })}
+          <div className="mapped-options">
+            {option.map((item, index) => {
+              return (
+                <div key={index}>
+                  <label>
+                    <input
+                      type="radio"
+                      value={item}
+                      name="option"
+                      required
+                      checked={selectedAnswer === item}
+                      onChange={handleSelection}
+                    />
+                    {item}
+                  </label>
+                </div>
+              );
+            })}
+          </div>
 
-          <input type="submit" />
+          <input className="submit-btn" type="submit" />
         </form>
       </div>
     </div>

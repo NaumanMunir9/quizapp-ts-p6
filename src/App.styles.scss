@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #000c1d;
+  color: whitesmoke;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2.5rem;
+}
+
+.final-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  height: 100%;
+  padding: 1.25rem 2.5rem;
+  margin: 2.5rem auto;
+  box-shadow: 0 0.0625rem 0.625rem gray;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 0.625rem;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.625rem;
+  }
+
+  p {
+    font-size: 1.625rem;
+  }
+}
+
+.app-container {
+  .quiz-app-title {
+    text-align: center;
+    font-size: 3.75rem;
+    margin: 1.25rem;
+  }
+
+  .score-counter {
+    text-align: center;
+    margin: 1.625rem;
+    font-size: 2.5rem;
+  }
+}
