@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Quiz } from "../quizTypes";
+import { QuestionType, Quiz } from "../quizTypes";
 import { shuffleArray } from "../utils";
 
 export enum Difficulty {
@@ -17,7 +17,7 @@ export const fetchQuizAPI = async (
   const response = await axios.get(url);
   const { results } = response.data;
 
-  const quizQuestions: Quiz[] = results.map((questionObj: Quiz) => {
+  const quizQuestions: Quiz[] = results.map((questionObj: QuestionType) => {
     return {
       question: questionObj.question,
       answer: questionObj.correct_answer,

@@ -1,4 +1,4 @@
-export interface Quiz {
+export interface QuestionType {
   category: string;
   correct_answer: string;
   difficulty: string;
@@ -7,8 +7,14 @@ export interface Quiz {
   type: string;
 }
 
-export interface QuestionType {
+export interface Quiz {
   question: string;
   answer: string;
   option: string[];
+}
+
+export interface QuestionCardProps {
+  option: string[];
+  question: string;
+  callback: (event: React.FormEvent<EventTarget>, userAnswer: string) => void;
 }
